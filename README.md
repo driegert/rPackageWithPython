@@ -37,6 +37,17 @@ The first line of your R wrapper functions should call the
 virtual environment exists and will throw an error with a 
 message if it was not.
 
+You do _not_ need to write your own Python scripts. You can simply 
+wrap existing Python functions as long as you ensure that the appropriate 
+Python packages are imported.
+
+As a result, you may end up with a package that has _no_ `.py` files.
+
+I believe this is okay at the moment, but will need to look into whether 
+the package will throw a fit without any `.py` files. If it does, leave the 
+original `add_numbers` Python function and `pyfunc.py` file in the 
+`inst/python` folder.
+
 ## `roxygen2`
 
 I find it easiest to use `roxygen2` for documentation. This will also 
