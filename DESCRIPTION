@@ -1,0 +1,22 @@
+Package: rPackageWithPython
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: reticulate, fs, tools
+Suggests: testthat
+SystemRequirements: Python (>= 3.8), numpy, pandas
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = "numpy"),
+      list(package = "pandas")
+    )
+  )
+RoxygenNote: 7.3.2

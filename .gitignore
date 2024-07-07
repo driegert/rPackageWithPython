@@ -1,0 +1,28 @@
+# R project files
+.Rproj.user/
+.Rhistory
+.RData
+
+# R package build artifacts
+.Rbuildignore
+*.tar.gz
+*.tgz
+*.zip
+
+# R package check results
+*.Rcheck/
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Python virtual environments
+.venv/
+env/
+
+# Python IDE configuration files
+.idea/
+.pydevproject
