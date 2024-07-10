@@ -2,6 +2,7 @@
 .Rproj.user/
 .Rhistory
 .RData
+*.Rproj
 
 # R package build artifacts
 .Rbuildignore
